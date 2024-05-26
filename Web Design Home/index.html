@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/vatan-computer-logo-64EF3FA0DA-seeklogo.com.png" alt="Company Logo" width="150px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Software Solutions</a></li>
+                            <li><a class="dropdown-item" href="#">Hardware Solutions</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Information Security</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <section class="pcbuild-section">
+        <div class="pcbuild-huge-head-banner">
+            <h1 style="color: antiquewhite;">PC Builder Wizard</h1>
+            <p class="hidden-xs hidden-sm hidden-md " style="color:white">Build Your Dream Computer with the PC Builder Wizard!</p>
+            <i class="icon-angle-down"></i>
+        </div>
+    
+        <div class="container">
+            <div class="form-container">
+                <form>
+                    <label for="fullName">Full Name:</label><br>
+                    <input type="text" id="fullName" name="fullName"><br>
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address"><br>
+                    <label for="city">City:</label><br>
+                    <input type="text" id="city" name="city"><br>
+                    <label for="postalCode">Postal Code:</label><br>
+                    <input type="text" id="postalCode" name="postalCode"><br>
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments"></textarea><br>
+                    <label for="os">Operating System Preference:</label><br>
+                    <input type="radio" id="windows" name="os" value="windows">
+                    <label for="windows">Windows</label><br>
+                    <input type="radio" id="linux" name="os" value="linux">
+                    <label for="linux">Linux</label><br>
+                    <input type="radio" id="mac" name="os" value="mac">
+                    <label for="mac">Mac</label><br>
+                    <label for="components">Required Components:</label><br>
+                    <input type="checkbox" id="processor" name="components" value="processor">
+                    <label for="processor">Processor</label><br>
+                    <input type="checkbox" id="ram" name="components" value="ram">
+                    <label for="ram">RAM</label><br>
+                    <input type="checkbox" id="graphicsCard" name="components" value="graphicsCard">
+                    <label for="graphicsCard">Graphics Card</label><br>
+                    <input type="checkbox" id="storage" name="components" value="storage">
+                    <label for="storage">Storage (SSD/HDD)</label><br>
+                    <input type="checkbox" id="powerSupply" name="components" value="powerSupply">
+                    <label for="powerSupply">Power Supply</label><br>
+                    <input type="checkbox" id="other" name="components" value="other">
+                    <label for="other">Other</label>
+                    <input type="text" id="otherText" name="otherText"><br>
+                    <label for="budget">Budget Range:</label><br>
+                    <select id="budget" name="budget">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select><br>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone"><br>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2022 Your Website. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+</html>
